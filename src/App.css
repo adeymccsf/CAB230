@@ -1,38 +1,459 @@
 .App {
+  background-image: url("./images/background_imagew.jpeg");
+  height: 110vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+  padding-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  background-image: url("./images//title.png");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Navbar {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.Navbar ul {
+  list-style: none;
+  margin: auto;
+}
+
+.Navbar ul li {
+  
+  display: inline-block;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Navbar ul li a {
+  display: block;
+  color: rgb(55, 129, 172);
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+
+.Navbar ul li a:hover {
+  background: #fff;
+}
+
+
+.Home .Box {
+  text-align: justify;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgba(233, 240, 243, 0.582);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  width:60%;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin: 20px;
+}
+
+.Home img {
+  margin-top: 20px;
+  margin-right: 18px;
+  margin-left:18px;
+  width: 50px;
+  float:left;
+}
+
+.HomeButtons {
+  display: inline-block;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.HomeButtons button {
+  background-color: rgba(94, 168, 218, 0.726);
+  display: inline-block;
+  margin-left: 270px;
+  width: 50%;
+  padding:10px;
+  color: #fff;
+  border: 1px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+}
+
+.HomeButtons button:focus {
+  background-color: rgba(94, 168, 218, 0.726);
+  transform: translateY(4px);
+  border-style:solid;
+}
+
+.HomeButtons button:hover {
+  background-color: #080606da
+}
+
+.page {
+  position: relative;
+  background-color: rgba(168, 207, 224, 0.308);
+  width:1100px;
+  height: 70%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 15px;
+  border:5px;
+  border-color: blue;
+}
+
+.page2 {
+  position: relative;
+  background-color: rgba(168, 207, 224, 0.308);
+  width:1100px;
+  height: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 15px;
+}
+
+.search {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.search2 input {
+  position: relative;
+  top: 20px;
+  width: 35%;
+  height: 50px;
+  left: 30%;
+}
+
+.search2 button {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 18%;
+  bottom: 30px;
+  background-color: rgb(100, 165, 209);
+  border-radius: 15px;
+  border:none;
+}
+
+.search2 button:hover {
+  background-color: #ffffff11
+}
+
+.search2 button:focus {
+  background-color: rgba(0, 153, 255, 0.726);
+  border:white
+}
+
+.search2button {
+  position: relative;
+  right:20%;
+  bottom: 20%;
+}
+
+.search button {
+  float: left;
+  background-color: rgb(100, 165, 209);
+  margin-inline: 10px;
+  color: #fff;
+  border: 1px;
+  padding: 15px 30px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+}
+
+.search button:focus {
+  background-color: rgba(0, 153, 255, 0.726);
+}
+
+.search button:hover {
+  background-color: #ffffff11
+}
+
+.Search {
+  background-color: rgba(255, 255, 255, 0);
+  width:1000px;
+  height: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 15px; 
+}
+
+.SearchBar {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  display: inline-block;
+}
+
+.SearchBar input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(83, 134, 211);
+  border-radius: 4px;
+}
+
+.SearchBar label {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  border:none;
+}
+
+.SearchBar button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+.Factors {
+  background-color: rgba(255, 255, 255, 0.404);
+  width:1000px;
+  height: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 15px; 
+}
+
+.LoginForm {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(168, 207, 224, 0.308);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  width: 550px;
+  margin:20px;
+  display: inline-block;
+}
+
+.LoginForm input {
+  top:20px;
+  position: relative;;
+  width: 40%;
+  margin-inline: 20px;
+  height: 50px;
+  font-size: 19px;
+  background-color: #fff;
+}
+
+.LoginForm .ChoiceButtons {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.LoginForm .ChoiceButtons button {
+  float: left;
+  background-color: rgba(94, 168, 218, 0.726);
+  margin-inline: 10px;
+  color: #fff;
+  border: 1px;
+  padding: 15px 30px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+}
+
+.LoginForm .ChoiceButtons button:focus {
+  background-color: rgba(94, 168, 218, 0.726);
+  transform: translateY(4px);
+  border-style:solid;
+}
+
+.LoginForm .ChoiceButtons button:hover {
+  background-color: #ffffff11
+}
+
+.ag-theme-balham {
+  position: relative;
+  display: inline-block;
+  margin:auto;
+  right: 20%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:20px;
+  bottom: 10px;
+}
+
+  .Header {
+    animation: flyin 1.2s ease forwards;
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(4px);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes flyin {
+     to { 
+       filter: blur(0);
+       transform: scale(1);
+       opacity: 1;
+     }
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.login {
+  position:relative;
+   top:0;
+   right:0;
+}
+
+.HomeButt a{
+  margin-right: 270px;
+  text-align: center;
+  float: left;
+}
+
+.ChoiceButtons a button{
+  background-color: rgba(94, 168, 218, 0.726);
+  margin-inline: 10px;
+  color: #fff;
+  border: 1px;
+  padding: 15px 30px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+}
+
+.ChoiceButtons a button:focus {
+  background-color: rgba(94, 168, 218, 0.726);
+  transform: translateY(4px);
+  border-style:solid;
+}
+
+.ChoiceButtons a button:hover {
+  background-color: #ffffff11;
+}
+
+.NameDisplay {
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(55, 129, 172);
+  font-size: 20px;
+  top: 10px;
+  position: relative;
+  z-index: 10;
+  right:19%;
+}
+
+
+
+.factorslist {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgba(108, 170, 206, 0.596);
+  display:inline-block;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.014);
+  height: 400px;
+}
+
+.content2 {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.014);
+  height: 435px;
+}
+
+.factors, .factors2 {
+  position: relative;
+  left: 60%;
+  bottom: 85%;
+  width: 38%;
+}
+
+.factorsr, .factorsr2 {
+  position: relative;
+  background-color: rgba(255, 127, 80, 0);
+  width: 50%;
+  float:right;
+  padding-top: 20px;
+}
+
+.factorsl, .factorsl2 {
+  position: relative;
+  background-color: rgba(0, 255, 255, 0);
+  width: 50%;
+  float:left;
+  padding-top: 20px;
+}
+
+.factorsmessage {
+  position:relative;
+  background-color: rgba(153, 153, 153, 0.486);
+  width: 70%;
+  left:17%;
+  float:left;
+  margin-top: 29%;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+.Graph {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.918);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  left:2%;
+  bottom: 48px;
+}
+
+.Info {
+  background-color: rgba(233, 240, 243, 0.582);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  width:100%;
+  display: inline-block;
+  border-radius: 20px;
+  font-size:20px;
+  width: 70%;
+  padding-bottom: -20px;
+}
+
+.barchart {
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 15px;
+  font-size: 20px;
+  position: relative;
+  left: 59%;
+  bottom: 465px;
+  width: fit-content;
+  padding-top: 35px;
+  height:370px;
+}
+
+.barcharttitle {
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(55, 129, 172);
+  font-size: 20px;
+  position: relative;
+  z-index: 10;
+  bottom: 410px;
+  left:315px;
 }
